@@ -62,7 +62,7 @@ var (
 func init() {
 	{{ if .ProgDataDir -}}
 		progDataDir = "{{ .ProgDataDir }}"
-	{{ else -}}
+	{{- else -}}
 		progDataDir = "/usr/local/share/debcomprt"
 	{{- end }}
 }
